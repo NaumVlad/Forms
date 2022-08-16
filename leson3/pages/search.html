@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск</title>
+</head>
+
+<body>
+  <header>
+    <h1>АвтоХам</h1>
+    <nav>
+      <ol>
+        <li><a href="../index.html">Регистрация</a></li>
+        <li><a href="authorization.html">Авторизация</a></li>
+        <li><a href="#">Поиск</a></li>
+      </ol>
+    </nav>
+  </header>
+  <h2>Поиск Авто</h2>
+  <form action="https://tests.fomenko.top/echo/index.php" method="get" target="_blank">
+    <div>
+      <label><b>Тип кузова</b></label>
+    </div>
+    <div>
+      <label for="type1">Универсал</label>
+      <input type="checkbox" name="sw" id="type1">
+    </div>
+
+    <div>
+      <label for="type2">Седан</label>
+      <input type="checkbox" name="sedan" id="type2">
+    </div>
+
+    <div>
+      <label for="type3">Хетчбэк</label>
+      <input type="checkbox" name="hb" id="type3">
+    </div>
+
+    <div>
+      <label for="type4">Кросовер</label>
+      <input type="checkbox" name="cros" id="type4">
+    </div>
+
+    <div>
+      <label for="type5">Купе</label>
+      <input type="checkbox" name="coupe" id="type5">
+    </div>
+
+    <div>
+      <label for="type6">Минивэн</label>
+      <input type="checkbox" name="mv" id="type6">
+    </div>
+
+    <div>
+      <label for="type7">Другой</label>
+      <input type="checkbox" name="another" id="type7">
+    </div>
+
+    <div>
+      <label for="brand"><b>Марка авто</b></label>
+    </div>
+    <div>
+      <select id="brand" name="brand-car">
+        <option selected disabled>Выберите марку</option>
+        <option>Audi</option>
+        <option>BMW</option>
+        <option>Mercedes</option>
+        <option>Volkswagen</option>
+        <option>Ford</option>
+        <option>Honda</option>
+        <option>Hyundai</option>
+        <option>Kia</option>
+        <option>Mazda</option>
+        <option>LandRover</option>
+        <option>Jaguar</option>
+        <option>Dodge</option>
+        <option>Nissan</option>
+        <option>Lexus</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="country"><b>Страна производитель</b></label>
+    </div>
+    <div>
+      <select id="country" name="country-car">
+        <option selected disabled>Выберите страну</option>
+        <option>Германия</option>
+        <option>Япония</option>
+        <option>Украина</option>
+        <option>Франция</option>
+        <option>США</option>
+        <option>Корея</option>
+        <option>Китай</option>
+        <option>Чехия</option>
+        <option>Италия</option>
+        <option>Болгария</option>
+        <option>Индия</option>
+        <option>Бразилия</option>
+        <option>Грузия</option>
+        <option>Австралия</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="year"><b>Год выпуска</b></label>
+    </div>
+    <div>
+      <select id="year" name="year_car-from">
+        <option selected disabled>Год, от</option>
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>2000</option>
+      </select>
+
+      <select name="year_car-before">
+        <option selected disabled>Год, до</option>
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>2000</option>
+      </select>
+    </div>
+    <hr>
+
+    <section>
+      <h3>Цена</h3>
+      <div>
+        <input type="number" id="price" name="price-from" placeholder="от">
+        <input type="number" name="price-before" placeholder="до">
+        <select name="currency">
+          <option value="USD" selected>$</option>
+          <option value="EUR">€</option>
+          <option value="UAH">грн.</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="bargain">Возможен торг</label>
+        <input type="checkbox" id="bargain" name="bargain">
+      </div>
+
+      <div>
+        <label for="exchange">Возможен обмен</label>
+        <input type="checkbox" id="exchange" name="exchange">
+      </div>
+    </section>
+    <hr>
+
+    <section>
+      <h3>Состояние</h3>
+      <div>
+        <label for="accident"><b>Участие в ДТП</b></label>
+      </div>
+      <div>
+        <select id="accident" name="accident">
+          <option selected disabled>Выберите</option>
+          <option>Не был в ДТП</option>
+          <option>Был в ДТП</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="credit">Авто в кредите</label>
+        <input type="checkbox" id="credit" name="credit">
+      </div>
+
+      <div>
+        <label for="uncleared">Нерастаможенная</label>
+        <input type="checkbox" id="uncleared" name="uncleared">
+      </div>
+
+      <div>
+        <label for="garage">Гаражное хранение</label>
+        <input type="checkbox" id="garage" name="garage">
+      </div>
+
+      <div>
+        <label for="registration">Первая регистрация</label>
+        <input type="checkbox" id="registration" name="registration">
+      </div>
+
+      <div>
+        <label for="owner">Первый владелец</label>
+        <input type="checkbox" id="owner" name="owner">
+      </div>
+    </section>
+    <hr>
+
+    <section>
+      <h3>Технические характеристики</h3>
+      <div>
+        <label for="consumption"><b>Расход топлива, л. / 100 км</b></label>
+      </div>
+      <div>
+        <input type="number" id="consumption" name="consumption-from" placeholder="от">
+        <input type="number" name="consumption-before" placeholder="до">
+      </div>
+
+      <div>
+        <label for="mileage"><b>Пробег, тыс.км</b></label>
+      </div>
+      <div>
+        <input type="number" id="mileage" name="mileage-from" placeholder="от">
+        <input type="number" name="mileage-before" placeholder="до">
+      </div>
+
+      <div>
+        <label for="fuel"><b>Тип топлива</b></label>
+      </div>
+      <select id="fuel" name="fuel">
+        <option selected disabled>Выберите</option>
+        <option>Бензин</option>
+        <option>Дизель</option>
+        <option>Газ</option>
+        <option>Газ/Бензин</option>
+        <option>Гибрид</option>
+        <option>Электро</option>
+      </select>
+
+      <div>
+        <label for="drive-unit"><b>Тип привода</b></label>
+      </div>
+      <select id="drive-unit" name="drive-unit">
+        <option selected disabled>Выберите</option>
+        <option>Полный</option>
+        <option>Передний</option>
+        <option>Задний</option>
+      </select>
+
+      <div>
+        <label for="transmission"><b>КПП</b></label>
+      </div>
+      <select id="transmission" name="transmission">
+        <option selected disabled>Выберите</option>
+        <option>Автомат</option>
+        <option>Механика</option>
+        <option>Типтроник</option>
+        <option>Робот</option>
+        <option>Вариатор</option>
+      </select>
+    </section>
+    <hr>
+
+    <section>
+      <h3>Комфорт</h3>
+      <div>
+        <label for="color-car"><b>Цвет кузова</b></label>
+        <input type="color" id="color-car" name="color-car">
+      </div>
+
+      <div>
+        <label for="salon"><b>Материал салона</b></label>
+      </div>
+      <div>
+        <select id="salon" name="salon">
+          <option selected disabled>Выберите</option>
+          <option>Ткань</option>
+          <option>Кожа</option>
+          <option>Алькантара</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="seats"><b>Подогрев сидений</b></label>
+      </div>
+      <div>
+        <select id="seats" name="seats">
+          <option selected disabled>Выберите</option>
+          <option>Передние сидения</option>
+          <option>Передние и задние сидения</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="window"><b>Стеклоподъемники</b></label>
+      </div>
+      <div>
+        <select id="window" name="window">
+          <option selected disabled>Выберите</option>
+          <option>Передние</option>
+          <option>Передние и задние</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="air"><b>Кондиционер</b></label>
+      </div>
+      <div>
+        <select id="air" name="air">
+          <option selected disabled>Выберите</option>
+          <option>Кондиционер</option>
+          <option>Климат-контроль 1-зонный</option>
+          <option>Климат-контроль 2-зонный</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="wheel"><b>Усилитель руля</b></label>
+      </div>
+      <div>
+        <select id="wheel" name="wheel">
+          <option selected disabled>Выберите</option>
+          <option>Гидро</option>
+          <option>Электро</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="luke">Люк</label>
+        <input type="checkbox" id="luke" name="luke">
+      </div>
+
+      <div>
+        <label for="tow-bar">Фаркоп</label>
+        <input type="checkbox" id="tow-bar" name="tow-bar">
+      </div>
+
+      <div>
+        <label for="parking">Парктроник</label>
+        <input type="checkbox" id="parking" name="parking">
+      </div>
+
+      <div>
+        <label for="signaling">Сигнализация</label>
+        <input type="checkbox" id="signaling" name="signaling">
+      </div>
+
+      <div>
+        <label for="cruise">Круиз контроль</label>
+        <input type="checkbox" id="cruise" name="cruise">
+      </div>
+    </section>
+    <hr>
+
+    <section>
+      <h3>Дополнительно</h3>
+      <div>
+        <label><b>Актуальность</b></label>
+      </div>
+      <div>
+        <label for="all">Все</label>
+        <input type="radio" id="all" name="relevance" value="all">
+      </div>
+
+      <div>
+        <label for="sold">Скрыть проданные</label>
+        <input type="radio" id="sold" name="relevance" value="sold">
+      </div>
+
+      <div>
+        <label for="only-sold">Только проданы</label>
+        <input type="radio" id="only-sold" name="relevance" value="only-sold">
+      </div>
+
+      <div>
+        <label><b>Показывать</b></label>
+      </div>
+      <div>
+        <label for="nomber1">По 10</label>
+        <input type="radio" id="nomber1" name="show" value="nomber1">
+      </div>
+
+      <div>
+        <label for="nomber2">По 20</label>
+        <input type="radio" id="nomber2" name="show" value="nomber2">
+      </div>
+
+      <div>
+        <label for="nomber3">По 30</label>
+        <input type="radio" id="nomber3" name="show" value="nomber3">
+      </div>
+
+      <div>
+        <label for="nomber4">По 40</label>
+        <input type="radio" id="nomber4" name="show" value="nomber4">
+      </div>
+    </section>
+    <hr>
+
+    <div>
+      <button><b>Поиск</b></button>
+      <button type="reset"><b>Очистить</b></button>
+    </div>
+  </form>
+
+  <footer>
+    <address>Украина,Днепр</address>
+    <time datetime="2022-06-30"> 30-06-2022 </time>
+    <ul>
+      <li><a href="tel:0631177176">(063)117-71-76</a></li>
+      <li><a href="mailto:naumenko.vlad49000@gmail.com">Naumenko.vlad49000@gmail.com</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

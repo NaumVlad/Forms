@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <header>
+    <h1>АвтоХам</h1>
+    <nav>
+      <ol>
+        <li><a href="#">Регистрация</a></li>
+        <li><a href="pages/authorization.html">Авторизация</a></li>
+        <li><a href="pages/search.html">Поиск</a></li>
+      </ol>
+    </nav>
+  </header>
+  <form action="https://tests.fomenko.top/echo/index.php" method="get" target="_blank" autocomplete="on">
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="email" required>
+    </div>
+
+    <div>
+      <label for="password">Пароль</label>
+      <input id="password" type="password" name="password" placeholder="Пароль" minlength="6" required>
+    </div>
+
+    <div>
+      <label for="confirm">Пароль</label>
+      <input id="confirm" type="password" name="confirm-password" placeholder="Подтверждение пароля" minlength="6"
+        required>
+    </div>
+
+    <div>
+      <button><b>Регистрация</b></button>
+      <button type="reset"><b>Сбросить форму</b></button>
+    </div>
+  </form>
+
+  <footer>
+    <address>Украина,Днепр</address>
+    <time datetime="2022-06-30"> 30-06-2022 </time>
+    <ul>
+      <li><a href="tel:0631177176">(063)117-71-76</a></li>
+      <li><a href="mailto:naumenko.vlad49000@gmail.com">Naumenko.vlad49000@gmail.com</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
