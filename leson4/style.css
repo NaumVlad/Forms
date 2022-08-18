@@ -15,23 +15,33 @@ p {
 }
 
 /* 10 */
-[title="текст"] {
+[title] {
   background-color: green;
 }
 
-/* 2 */
+/* 1+1=2 */
 div b {
   background-color: red;
 }
 
-/* 2 */
+/* 1+1=2 */
 div p {
   background-color: gray;
 }
 
-/* 3 */
-p b i {
+/* 1+10=11 */
+p.paragraph {
+  background-color: plum;
+}
+
+/* 10+100=110 */
+.block #teg {
   background-color: purple;
 }
 
-p
+/* 10+10=20 */
+.p[dir] {
+  background-color: black;
+}
+
+/*  */
