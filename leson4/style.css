@@ -25,7 +25,7 @@ div b {
 }
 
 /* 1+1=2 */
-div p {
+div>p {
   background-color: gray;
 }
 
@@ -44,4 +44,7 @@ p.paragraph {
   background-color: black;
 }
 
-/*  */
+/* 1+1+10=12 */
+.message[tabindex] {
+  background-color: rgb(6, 148, 158);
+}
