@@ -15,16 +15,23 @@ p {
 }
 
 /* 10 */
-[id="message"] {
+[title="текст"] {
   background-color: green;
 }
 
 /* 2 */
-div i {
+div b {
   background-color: red;
 }
 
 /* 2 */
-p b {
+div p {
+  background-color: gray;
+}
+
+/* 3 */
+p b i {
   background-color: purple;
 }
+
+p
