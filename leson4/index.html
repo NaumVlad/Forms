@@ -9,36 +9,31 @@
   <title>Document</title>
 </head>
 
-<header>
+<body>
+  <p>Тег Р = вес 1</p>
+  <p class="p">Класс Р = вес 10</p>
+  <p id="text">Айди text = вес 100</p>
+  <p title="текст">Атрибут title = вес 10</p>
 
-  <body>
-    <p>Тег Р = вес 1</p>
-    <p class="p">Класс Р = вес 10</p>
-    <p id="text">Айди text = вес 100</p>
-    <p title="текст">Атрибут title = вес 10</p>
+  <div>
+    <p><b>Вложенный селектор B = вес 2</b></p>
+  </div>
 
-    <div>
-      <p><b>Вложеный селектор B = вес 2</b></p>
-    </div>
+  <div>
+    <p>Дочерний селектор P = вес 2</p>
+  </div>
 
-    <div>
-      <p>Дочерний селектор P = вес 2</p>
-    </div>
+  <p class="paragraph">Последовательность селекторов = вес 11</p>
 
-    <p class="paragraph">Последовательность селекторов = вес 11</p>
+  <div class="block">
+    <p id="teg">Применяется к вложенным в div с Классом block тегам Р с айди teg = вес 110</p>
+  </div>
 
-    <div class="block">
-      <p id="teg">Применяется к вложенным в div с Классом block тегам Р с айди teg = вес 110</p>
-    </div>
+  <div>
+    <p class="p" dir="rtl">Применяется к вложенным в div тегам Р с классом Р + атрибутом dir = вес 20</p>
+  </div>
 
-    <div>
-      <p class="p" dir="rtl">Применяется к вложенным в div тегам Р с классом Р + атрибутом dir = вес 20</p>
-    </div>
-
-    <p class="message" tabindex="1">Применяется к тегу Р с классом message и атрибутом tabindex</p>
-
-  </body>
-
-</header>
+  <p class="message" tabindex="1">Применяется к тегу Р с классом message и атрибутом tabindex</p>
+</body>
 
 </html>
