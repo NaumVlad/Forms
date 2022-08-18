@@ -44,7 +44,7 @@ p.paragraph {
   background-color: black;
 }
 
-/* 1+1+10=12 */
+/* 10+10=20 */
 .message[tabindex] {
   background-color: rgb(6, 148, 158);
 }
